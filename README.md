@@ -13,7 +13,6 @@ Welcome to the Planetary Tourism Office GitHub repository! This project combines
   - [Configuring the Chatbot](#configuring-the-chatbot)
   - [Running the Application](#running-the-application)
 - [Contributing](#contributing)
-- [License](#license)
 
 ## Introduction
 
