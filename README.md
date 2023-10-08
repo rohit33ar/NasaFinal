@@ -58,7 +58,7 @@ Running the Application:
 Ensure you are in the project directory.
 
 Run the chatbot application:
->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>python chatbot.py
+python chatbot.py
 Follow the on-screen instructions to interact with the chatbot and plan your space adventure.
 
 Contributing:
