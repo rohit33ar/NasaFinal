@@ -9,11 +9,26 @@ import mars from "../assets/images/6_mars.jpg";
 import spaceship from "../assets/images/spacetrip.jpg";
 import Navbar from "../components/Navbar";
 import { Navlinks } from "../components/NavItems.js";
+import artmis from "../assets/images/artmis.jpg";
+import { useNavigate } from "react-router-dom";
 export default function Home() {
+  const navigate = useNavigate();
+  const clicked = () => {
+    navigate("../Img");
+  };
+  const clickedm = () => {
+    navigate("../moonvi");
+  };
   return (
     <>
       {/* 1st page of home */}
       <div className="relative">
+        {/* <iframe
+          allow="microphone;"
+          width="350"
+          height="430"
+          src="https://console.dialogflow.com/api-client/demo/embedded/7d55c6d9-5162-46c0-81d6-6432cf3ac80b"
+        ></iframe> */}
         <video
           autoPlay
           loop
@@ -62,13 +77,17 @@ export default function Home() {
             {/* earth view */}
             <div className="flex">
               {/* <h3 className="text-4xl font-bold">SEE Earth from space</h3> */}
-              <div className="w-[40vw]">
-                <img
-                  src={earth}
-                  alt="earth"
-                  className="relative left-[5vw] my-auto  w-[45vh] mt-10"
-                />
-              </div>
+              <a href="https://science.nasa.gov/earth/">
+                {" "}
+                <div className="w-[40vw]">
+                  <img
+                    src={earth}
+                    alt="earth"
+                    className="relative left-[5vw] my-auto  w-[45vh] mt-10"
+                  />
+                  <div className="relative left-56">click earth</div>
+                </div>
+              </a>
               <div className=" min-h-[50vh] w-[50vw]">
                 <h1 className="relative left-10 min-h-[20px] mt-10 w-[50vw] font-bold">
                   Experience the view of Earth from space
@@ -77,11 +96,16 @@ export default function Home() {
                   {/* <span className="font-bold text-2xl">Tour Details :</span>
                   <span className="mt-1 font-bold">Earth view from space</span>
                   <span className="font-bold"></span> */}
-                  Experience the awe-inspiring sight of Earth from space, where
+                  {/* Experience the awe-inspiring sight of Earth from space, where
                   its vibrant blue oceans and lush green continents contrast
                   against the backdrop of the cosmos. This rare perspective
                   offers a profound appreciation for our planet's natural
-                  beauty, a view cherished by only a fortunate few
+                  beauty, a view cherished by only a fortunate few */}
+                  <div className="font-bold">Earth sub-orbital</div>
+                  <div className="mt-2">Distance from the earth 26,560km</div>
+                  <div className="mt-2">Distance from </div>
+                  <div className="">pressure:</div>
+                  <div className="">Time taken:</div>
                 </div>
                 <div className="relative top-10 left-20 text-black">
                   <button className="mr-10 bg-blue-200 border font-bold">
@@ -99,46 +123,73 @@ export default function Home() {
               <div className="w-[40vw] relative left-[15vw] mt-10">
                 <h1 className="font-bold">Visit the Moon</h1>
                 <p className="text-xl mt-5">
-                  Elevate your vacation beyond the stars and set foot on the
+                  {/* Elevate your vacation beyond the stars and set foot on the
                   lunar surface. Your escape to the Moon is not just a dream;
                   it's a reality waiting to be explored. Discover the
                   extraordinary, visit the Moon on your vacation, and create
-                  memories that defy earthly boundaries
+                  memories that defy earthly boundaries */}
+                  <div className="font-bold mt-2">Moon visit</div>
+                  <div className="font-bold mt-2">
+                    distance form the earth: 1080 miles
+                  </div>
+                  <div className="font-bold mt-2">
+                    resources: 225 million km
+                  </div>
                 </p>
                 <div className="mt-5 text-black">
-                  <button className="mr-10 bg-blue-200">Tour Guide</button>
-                  <button className="bg-blue-200">Trip Demo</button>
+                  <button
+                    onClick={clicked}
+                    className="bg-blue-200 mr-10 font-bold"
+                  >
+                    Tour Guide
+                  </button>
+                  <button className="bg-blue-200" onClick={clickedm}>
+                    Trip Demo
+                  </button>
                 </div>
               </div>
-              <div className="right-0 my-auto">
-                {" "}
-                <img
-                  src={vmoon}
-                  alt="moon"
-                  className="w-[30vw] relative left-[16vw]"
-                />
-              </div>
+              <a href="https://moon.nasa.gov">
+                <div className="right-0 my-auto">
+                  {" "}
+                  <img
+                    src={vmoon}
+                    alt="moon"
+                    className="w-[30vw] relative left-[16vw]"
+                  />
+                </div>
+              </a>
             </div>
             {/* visit mars */}
             <div className=" flex mt-16">
               {/* <h3 className="text-4xl font-bold">SEE Earth from space</h3> */}
-              <div className="left-0">
-                <img
-                  src={mars}
-                  alt="earth"
-                  className="w-[30vw] my-auto relative left-[12vw]"
-                />
-              </div>
+              <a href="https://mars.nasa.gov/">
+                {" "}
+                <div className="left-0">
+                  <img
+                    src={mars}
+                    alt="earth"
+                    className="w-[30vw] my-auto relative left-[12vw]"
+                  />
+                </div>
+              </a>
               <div className="float-right relative left-[12vw]">
                 <h1 className="relative left-10 mt-10 font-bold ">
                   Visit The Mars
                 </h1>
                 <p className="w-[40vw] relative left-20 top-5 text-xl justify content-end">
-                  Take your vacation to new heights and step onto the Martian
+                  {/* Take your vacation to new heights and step onto the Martian
                   landscape. Your journey to Mars is not a mere fantasy; it's a
                   tangible adventure waiting to unfold. Uncover the
                   extraordinary, visit Mars on your vacation, and craft memories
-                  that transcend the boundaries of Earth
+                  that transcend the boundaries of Earth */}
+                  <div className="font-bold mt-2">Diameter 4222 miles</div>
+                  <div className="font-bold mt-2">
+                    distance form the earth: 384,400km
+                  </div>
+                  <div className="font-bold mt-2">resources:Mg, Al, Ti</div>
+                  <div className="font-bold mt-2">
+                    pressure: 6.518 millibars
+                  </div>
                 </p>
                 <div className=" relative top-10 left-20 text-black">
                   <button className="mr-10 bg-blue-200 border font-bold ">

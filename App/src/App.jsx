@@ -9,7 +9,7 @@ import Book from "./pages/Book";
 import SpaceCrafts from "./pages/SpaceCrafts";
 import AstroTrain from "./pages/AstroTrain";
 import Mars from "./pages/mars";
-
+import Img from "./pages/Img";
 import Navbar from "./components/Navbar";
 // import { NavLinks } from NavItems
 import { Navlinks } from "./components/NavItems";
@@ -39,6 +39,7 @@ export default function App() {
           <Route path="/astro" element={<AstroTrain />} />
           <Route path="/mars" element={<Mars />} />
           <Route path="crafts" element={<SpaceCrafts />} />
+          <Route path="Img" element={<Img />} />
         </Routes>
       </BrowserRouter>
     </div>
