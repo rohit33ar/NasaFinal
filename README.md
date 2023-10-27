@@ -45,7 +45,7 @@ Before you can run the Planetary Tourism Office chatbot, you'll need the followi
 1. Clone this repository to your local machine:
 
    ```bash
-   git clone https://github.com/your-username/planetary-tourism.git
+   git clone https://github.com/rohit33ar/NasaFinal.git
 
 Usage:
 -------
